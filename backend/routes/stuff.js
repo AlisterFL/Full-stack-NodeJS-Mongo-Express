@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const stuffCtrl = require("../controllers/stuff");
 
-const Thing = require("../models/thing");
+const Thing = require("../models/Thing");
 
 router.get("/", stuffCtrl.getAllStuff);
 router.post("/", stuffCtrl.createThing);
